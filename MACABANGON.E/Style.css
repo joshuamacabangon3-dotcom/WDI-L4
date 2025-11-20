@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background: black;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Home Page */
+.home {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.btn {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Product Page Layout */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Body 80% */
+.content {
+  flex: 80%;
+}
+
+/* Drinks Row - Flex */
+.drinks {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.card {
+  background: white;
+  border: 5px solid black;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  width: 150px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Snacks Row - Grid */
+.snacks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Aside 20% */
+.cart {
+  flex: 20%;
+  background: #fff;
+  border: 5px solid black;
+  border-radius: 8px;
+  padding: 15px;
+  height: fit-content;
+}
+
+.cart h3 {
+  margin-bottom: 20px;
+}
+
+.cart ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.cart li {
+  padding: 5px 0;
+  border-bottom: 20px solid #eee;
+}
+
+.total {
+  text-align: right;
+}
+
+/* Footer */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
